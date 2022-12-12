@@ -1,0 +1,7 @@
+build:
+  docker:
+    web: Dockerfile
+  config:
+    REACT_APP_API_URL: https://lab7-vimi-api.herokuapp.com/
+run:
+  web: serve -l $PORT -s build
